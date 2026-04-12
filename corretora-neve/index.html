@@ -15,7 +15,7 @@
 	<meta property="og:image" content="img/patrick-tomasso-5eZu5p0vSPg-unsplash.jpg">
 
 	<!-- Favicon (Miniatura do Título) -->
-	<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 79 79'><path d='M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z' fill='%2365DAFF'/></svg>">
+	<link rel="icon" type="image/png" href="img/neve.png">
 
 	<!-- Tailwind -->
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -83,9 +83,7 @@
             <div class="flex flex-row items-center justify-between py-6">
                 <div class="relative md:mt-8">
                     <a href="/" class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline" title="Página Inicial Neve Corretora">Neve Corretora</a>
-                    <svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z" fill="#65DAFF"/>
-                    </svg>
+                    <img src="img/neve.png" class="h-11 z-40 absolute -top-2 -left-3" alt="Logo Neve">
                 </div>
                 <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -95,10 +93,10 @@
                 </button>
             </div>
             <nav :class="{ 'transform md:transform-none': !open, 'h-full': open }" class="h-0 md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 scale-y-0">
-                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Início</a>
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="/">Início</a>
                 <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#vantagens">Vantagens</a>
-                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Diferenciais</a>
-                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Contato</a>
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#diferenciais">Diferenciais</a>
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#contato">Contato</a>
             </nav>
         </div>
     </header>
@@ -117,7 +115,7 @@
         </div>
 
         <!-- Formulário de Leads -->
-        <div data-aos="fade-left" class="w-full lg:w-5/12 bg-white p-8 rounded-2xl shadow-2xl z-50">
+        <div id="contato" data-aos="fade-left" class="w-full lg:w-5/12 bg-white p-8 rounded-2xl shadow-2xl z-50">
             <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Simule agora seu financiamento</h2>
             <form 
                 x-data="{ 
@@ -263,7 +261,7 @@
 
 
 		<!-- PROGRAMA MCMV -->
-		<section class="grid md:grid-cols-3 gap-14 md:gap-5 mt-20">
+		<section id="diferenciais" class="grid md:grid-cols-3 gap-14 md:gap-5 mt-20">
 			<div data-aos="fade-up" class="bg-white shadow-xl p-6 text-center rounded-xl">
 				<div style="background: #5B72EE;" class="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12">
 					<svg class="w-6 h-6 text-white" viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -312,9 +310,7 @@
 			<div class="flex py-12 justify-center text-white items-center px-20 sm:px-36">
 				<div class="relative">
 					<h1 class="font-bold text-xl pr-5 relative z-50">Neve Corretora</h1>
-					<svg class="w-11 h-11 absolute -top-2 -left-3 z-40" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M35.9645 2.94975C37.9171 0.997129 41.0829 0.997127 43.0355 2.94975L76.0502 35.9645C78.0029 37.9171 78.0029 41.0829 76.0503 43.0355L43.0355 76.0502C41.0829 78.0029 37.9171 78.0029 35.9645 76.0503L2.94975 43.0355C0.997129 41.0829 0.997127 37.9171 2.94975 35.9645L35.9645 2.94975Z" stroke="#26C1F2" stroke-width="2"/>
-					</svg>
+					<img src="img/neve.png" class="w-11 h-11 absolute -top-2 -left-3 z-40" alt="Logo Neve">
 				</div>
 				<span class="border-l border-gray-500 text-sm pl-5 py-2 font-semibold">Realizando Sonhos</span>
 			</div>
